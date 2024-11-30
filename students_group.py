@@ -1,15 +1,20 @@
 from collections import namedtuple
 import random
 
+from lessons import Lesson
+from slot import Slot
 from subject import Subject
 from teacher import Teacher
 
 
 class StudentsGroup:
-    def __init__(self, grade: int, letter: str, data: dict):
+    def __init__(self, grade: int, letter: str, data: dict, num_slots_per_day: int = 7):
         self.data = data
         self.grade = grade
         self.letter = letter
+
+        self.max_lessons_per_slot = 1
+        self.slots = [Slot(i, self.max_lessons_per_slot) for i in range(num_slots_per_day * 5)]
 
     def __repr__(self):
         return f"{self.grade}{self.letter}"
@@ -20,6 +25,7 @@ class StudentsGroup:
             for i in range(n):
                 result.append(subject)
         return result
+
 
 Car = namedtuple('GroupData', ['subject' ,'number', 'teacher'])
 
