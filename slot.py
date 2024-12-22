@@ -18,6 +18,12 @@ class Slot:
         else:
             return False
         
+    def remove_lesson(self, index, remove_teacher_group=True):
+        if remove_teacher_group:
+            self.lessons[index].group.slots[self.index].remove_lesson(index, remove_teacher_group=False)
+            self.lessons[index].teacher.slots[self.index].remove_lesson(index, remove_teacher_group=False)
+        self.lessons.pop(index)
+        
     def get_lesson(self, index):
         return self.lessons[index]
 
