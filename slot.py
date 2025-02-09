@@ -54,10 +54,6 @@ class Slot:
     def __repr__(self):
         result = f'\n slot {self.index}\n'
         for lesson in self.lessons:
-            result += f"-- {lesson}\n"
+            result += f"--- {lesson}\n"
 
         return result
-
-class SlotList(list):
-    def calculate_metrics(self):
-        return 0

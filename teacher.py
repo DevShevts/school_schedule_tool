@@ -1,4 +1,3 @@
-
 from slot import Slot
 from subject import Subject
 
