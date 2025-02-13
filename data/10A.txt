@@ -1,6 +1,0 @@
-Andrey A. | MATH | 5
-Carl C. | CHEMISTRY | 1
-Denis D. | RUSSIAN | 3
-Evgeniy E. | ENGLISH | 3
-Helen H. | SPORTS | 2
-Boris B. | PHYSICS | 3

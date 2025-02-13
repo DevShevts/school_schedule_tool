@@ -2,10 +2,15 @@ from enum import Enum
 
 
 class Subject(Enum):
-    MATH = 1
-    PHYSICS = 2
-    CHEMISTRY = 3
-    RUSSIAN = 4
-    ENGLISH = 5
-    SPORTS = 6
+    РУССКИЙ_ЯЗЫК = 1
+    ЛИТЕРАТУРА = 2
+    АЛГЕБРА = 3
+    ГЕОМЕТРИЯ = 4
+    ФИЗИКА = 5
+    ХИМИЯ = 6
+    БИОЛОГИЯ = 7
+    ИСТОРИЯ = 8
+    ГЕОГРАФИЯ = 9
+    ОБЩЕСТВОЗНАНИЕ = 10
+    ИНФОРМАТИКА = 11
 
